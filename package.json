@@ -1,0 +1,48 @@
+{
+  "name": "doctolib-client",
+  "version": "0.0.1",
+  "description": "Doctolib API for NodeJS",
+  "main": "dist/DoctolibClient.js",
+  "typings": "dist/DoctolibClient.d.ts",
+  "scripts": {
+    "start": "typings install",
+    "test": "gulp"
+  },
+  "files": [
+    "dist/"
+  ],
+  "keywords": [
+    "Doctolib",
+    "typescript",
+    "nodeJS"
+  ],
+  "author": {
+    "name": "Mathieu PICCIOLLI",
+    "email": "mathieu.picciolli@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mpicciolli/doctolib-client.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.13.4",
+    "gulp": "^3.9.0",
+    "gulp-insert": "^0.5.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.10.0",
+    "body-parser": "^1.15.2",
+    "merge2": "^1.0.2",
+    "mocha": "^2.5.3",
+    "sinon": "^1.17.4",
+    "typescript": "^1.8.0",
+    "typings": "1.0.4"
+  },
+  "dependencies": {
+    "crypto": "0.0.3",
+    "moment": "^2.14.1",
+    "request": "2.74.0"
+  }
+}
