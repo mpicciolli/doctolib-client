@@ -214,6 +214,7 @@ See release notes [here](./RELEASENOTES.md).
 
 Licensed under [Apache 2.0](./LICENSE).
 
+
 [npm-image]: https://nodei.co/npm/doctolib-client.png
 [npm-url]: https://nodei.co/npm/doctolib-client/
 [travis-image]: https://travis-ci.org/mpicciolli/doctolib-client.svg?branch=master
