@@ -15,4 +15,3 @@ before_script:
     - npm install coveralls
 script:
     - gulp
-    - istanbul cover ./node_modules/mocha/bin/_mocha --report
