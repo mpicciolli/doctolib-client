@@ -73,7 +73,7 @@ class DoctolibClient {
     }
     /**
      * Cancel an Appointment
-     * @param id required : Doctolib ID of the appointment.
+     * @param appointmentId required : Doctolib ID of the appointment.
      * @param cb
      */
     deleteAppointment(appointmentId, cb) {
@@ -181,6 +181,8 @@ class DoctolibClient {
             options = this.getHeaders(endPoint, signedUrl, now, action);
         }
         request(options, function (error, response, body) {
+            if (error)
+                return cb(body);
             if (response.statusCode === 200) {
                 cb(null, body);
             }

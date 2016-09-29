@@ -1,6 +1,7 @@
 import { AppointmentModel } from "./AppointmentModel";
 import { DoctolibClientOptionModel } from "./DoctolibClientOptionModel";
 export interface IDoctolibClient {
+    authenticate(cb: (err: any, res?: any) => void): void;
     getAgenda(cb: (err: any, res?: any) => void): void;
     getAgendaAsync(): Promise<any>;
     getVisitMotive(agendaIds: string | Array<string>, cb: (err: any, res?: any) => void): void;
@@ -13,6 +14,7 @@ export interface IDoctolibClient {
     createAppointmentAsync(appointment: AppointmentModel): Promise<any>;
     deleteAppointment(appointmentId: string, cb: (err: any, res?: any) => void): void;
     deleteAppointmentAsync(appointmentId: string): Promise<any>;
+    setDataFormat(format: string): any;
 }
 export declare class DoctolibClient implements IDoctolibClient {
     private static authRessource;
@@ -60,7 +62,7 @@ export declare class DoctolibClient implements IDoctolibClient {
     createAppointment(appointment: AppointmentModel, cb: (err: any, res?: any) => void): void;
     /**
      * Cancel an Appointment
-     * @param id required : Doctolib ID of the appointment.
+     * @param appointmentId required : Doctolib ID of the appointment.
      * @param cb
      */
     deleteAppointment(appointmentId: string, cb: (err: any, res?: any) => void): void;

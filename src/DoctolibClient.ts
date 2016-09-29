@@ -245,6 +245,9 @@ export class DoctolibClient implements IDoctolibClient {
         }
 
         request(options, function (error, response, body) {
+            if(error)
+                return cb(body);
+
             if (response.statusCode === 200) {
                 cb(null, body);
             }
