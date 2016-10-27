@@ -220,7 +220,7 @@ export class DoctolibClient implements IDoctolibClient {
     private apiCall(action:string, ressource:string, params:string, content:any, cb:any) {
 
         if (!this.clientAccessKey || !this.secretAccessKey) {
-            cb('Authenticate before making API calls');
+            return cb('Authenticate before making API calls');
         }
 
         var now = moment().utc().format('ddd, DD MMM YYYY HH:mm:ss') + ' GMT';

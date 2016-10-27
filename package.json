@@ -1,6 +1,6 @@
 {
   "name": "doctolib-client",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Doctolib API for NodeJS",
   "main": "dist/DoctolibClient.js",
   "typings": "dist/DoctolibClient.d.ts",
