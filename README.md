@@ -1,4 +1,4 @@
-# [DEPRECQATED] doctolib-client
+# [DEPRECATED] doctolib-client
 
 [![NPM][npm-image]][npm-url]
 
